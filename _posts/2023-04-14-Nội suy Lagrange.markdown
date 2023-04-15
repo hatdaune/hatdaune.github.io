@@ -56,6 +56,32 @@ Vì vậy,
 
 $$ f(n+1) = \displaystyle \sum_{i=0}^{n} \frac{i}{i+1} \frac{(n+1)!}{(n+1-i)i!(n-i)!} (-1)^{n-i} = \displaystyle \sum_{i=0}^{n} (-1)^{n-i} i \frac{(n+1)!}{(n+1-i)!(i+1)!} = \frac{1}{n+2} \displaystyle \sum_{i=0}^{n} (-1)^{n-i} i C_{n+2}^{i+1} $$
 
+**Bài toán 2. (IMO Shortlist 1981)** Cho đa thức $P(x) \in R[x]$ có $degP(x) = n$ thỏa mãn điều kiện:
+
+$$ P(k) = \frac{1}{C_{n+1}^k}, \forall k = \overline{0, n}$$
+
+Tính $P(n+1)$. 
+
+**Bài giải.** 
+
+Áp dụng công thức nội suy Lagrange với $n+1$ mốc nội suy $x_i = i,$ $\forall i = \overline{0,n}$, ta có: 
+
+$$ P(x) = \displaystyle \sum_{i=0}^{n} \Bigg[ P(i) \prod_{j = 0\\j \neq i}^{n} \frac{x - x_j}{x_i - x_j}\Bigg] = \displaystyle \sum_{i=0}^{n} \Bigg[ \frac{1}{C_{n+1}^i} \prod_{j = 0\\j \neq i}^{n} \frac{x - j}{i - j}\Bigg]$$
+
+Với $x=n+1$: 
+
+$$ P(n+1) = \displaystyle \sum_{i=0}^{n} \Bigg[ \frac{1}{C_{n+1}^i} \prod_{j = 0\\j \neq i}^{n} \frac{n+1-j}{i - j} \Bigg]$$
+
+$$ = \displaystyle \sum_{i=0}^{n} \Bigg[ \frac{1}{C_{n+1}^i i! (n-i)! (-1)^{n-i}} \prod_{j = 0\\j \neq i}^{n} \frac{n+1-j}{i - j} \Bigg]$$
+
+$$ = \displaystyle \sum_{i=0}^{n} \Bigg[ \frac{n+1-i}{(n+1)! (-1)^{n-i}} \prod_{j = 0\\j \neq i}^{n} \frac{n+1-j}{i - j} \Bigg]$$
+
+$$ = \displaystyle \sum_{i=0}^{n} \Bigg[ \frac{n+1-i}{(n+1)! (-1)^{n-i}} \frac{(n+1)!}{n+1-i} \Bigg] = \displaystyle \sum_{i=0}^{n} \frac{1}{(-1)^{n-i}}$$
+
+Vậy với $n$ chẵn thì $P(n+1) = 1$ còn $n$ lẻ thì $P(n+1) = 0$. 
+
+## 0x02 Thuật toán SSS 
+
 <script type="text/x-mathjax-config">
     MathJax.Hub.Config({
       tex2jax: {
