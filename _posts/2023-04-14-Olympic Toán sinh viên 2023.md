@@ -109,7 +109,7 @@ Sáng thứ 5, các thầy cô đi họp. Anh Kiên thi cuối kỳ môn gì đ�
 {: refdef}
 
 {:refdef: style="text-align: center;"}
-  ![Smile](/images/OlympicMath2023/43.jpg)  
+  ![Smile](/images/OlympicMath2023/43.JPG)  
   Hình 12: Anh Nam chủ tịch
 {: refdef}
 
