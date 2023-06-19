@@ -12,7 +12,8 @@ description: > # this means to ignore newlines until "baseurl:"
   Math and Computer Science
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "https://geordo.github.io" # the base hostname & protocol for your site
-twitter_username: NULL
+twitter_username: georgedo_twit
+# platform: linkedin, user_url: "https://www.linkedin.com/in/geordo"
 github_username:  geordo
 
 # Build settings
@@ -22,4 +23,8 @@ github_username:  geordo
 #rdiscount:
  #   extensions: [ "hard_wrap","autolink", "tables", "strikethrough", "superscript", "with_toc_data", "highlight", "prettify","no_intra_emphasis"]
 
-theme: jekyll-theme-hacker
+# theme: jekyll-theme-hacker
+theme: minima
+
+plugins:
+  - jekyll-seo-tag
