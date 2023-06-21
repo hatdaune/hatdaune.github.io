@@ -23,7 +23,7 @@ layout: default
 
 <img style="float: right; max-width: 33%; border-radius: 50%; margin: 0 0 1em 2em;" src="/images/georgedo.png">
 
-Xin chào các bạn, tớ là Đậu Đậu, sinh viên năm nhất chuyên ngành CNTT. Mình sinh ra và lớn lên tại mảnh đất miền Trung đầy nắng gió Nghệ An. Hiện tại, mình đang học tập và sinh sống tại Hà Nội.
+Xin chào các bạn, tớ là Đậu Đậu, sinh viên năm nhất chuyên ngành CNTT. Mình sinh ra và lớn lên tại mảnh đất miền Trung đầy nắng và gió, Nghệ An. Hiện tại, mình đang sinh sống và học tập tại Hà Nội.
 
 Blog này là nơi mình viết về những kiến thức, chủ đề liên quan tới Toán và Khoa học Máy tính mà mình cảm thấy thú vị.<br>Thời gian rảnh rỗi, mình thường hay viết vu vơ và chơi Capture The Flag. 
 
